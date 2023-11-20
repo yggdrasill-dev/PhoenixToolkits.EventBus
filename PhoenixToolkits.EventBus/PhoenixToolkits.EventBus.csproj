@@ -6,7 +6,23 @@
     <Nullable>enable</Nullable>
     <RootNamespace>Valhalla.Messages</RootNamespace>
     <SqlQueryToolsConnectionString />
+    <PackageId>PhoenixToolkits.EventBus</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Phoenix</Authors>
+    <Company>Valhalla</Company>
+    <Copyright>MIT</Copyright>
+    <PackageProjectUrl>https://github.com/yggdrasill-dev/PhoenixToolkits.EventBus</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/yggdrasill-dev/PhoenixToolkits.EventBus.git</RepositoryUrl>
+    <PackageTags>Message</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AsyncMethodNameFixer" Version="2.3.0" />
