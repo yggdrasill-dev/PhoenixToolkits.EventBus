@@ -11,7 +11,13 @@ internal class EventBus : IEventBus
 		m_EventSources.Add(id, source);
 	}
 
-	public IEventSource<TEventData>? GetEventSource<TEventData>(string id)
+	public IEventPublisher<TEventData>? GetEventPublisher<TEventData>(string id)
+		=> GetEventSource<TEventData>(id);
+
+	public IObservable<TEventData>? GetEventObserable<TEventData>(string id)
+		=> GetEventSource<TEventData>(id)?.Observable;
+
+	private IEventSource<TEventData>? GetEventSource<TEventData>(string id)
 		=> m_EventSources.TryGetValue(id, out var source)
 			? source.GetEventSource<TEventData>()
 			: null;

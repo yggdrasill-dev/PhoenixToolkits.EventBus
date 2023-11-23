@@ -17,7 +17,7 @@ public class DependencyInjectionTests
 		var sut = sp.GetRequiredService<IEventBus>();
 
 		// Act
-		var actual = sut.GetEventSource<Guid>("test");
+		var actual = sut.GetEventPublisher<Guid>("test");
 
 		// Assert
 		Assert.NotNull(actual);
