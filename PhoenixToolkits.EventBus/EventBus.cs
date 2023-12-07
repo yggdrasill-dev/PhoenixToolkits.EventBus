@@ -2,7 +2,11 @@
 
 internal class EventBus : IEventBus
 {
+#if NET8_0_OR_GREATER
 	private readonly Dictionary<string, IEventSourceContainer> m_EventSources = [];
+#else
+	private readonly Dictionary<string, IEventSourceContainer> m_EventSources = new();
+#endif
 
 	public void RegisterEventSource<TEventData>(string id)
 	{

@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net8.0;net6.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>Valhalla.Messages</RootNamespace>
     <SqlQueryToolsConnectionString />
     <PackageId>PhoenixToolkits.EventBus</PackageId>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <Authors>Phoenix</Authors>
     <Company>Valhalla</Company>
     <Copyright>MIT</Copyright>

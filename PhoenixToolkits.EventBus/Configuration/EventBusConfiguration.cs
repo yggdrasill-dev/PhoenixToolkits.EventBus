@@ -2,7 +2,11 @@
 
 public class EventBusConfiguration
 {
+#if NET8_0_OR_GREATER
 	private readonly List<Action<EventBus>> m_RegisterActions = [];
+#else
+	private readonly List<Action<EventBus>> m_RegisterActions = new();
+#endif
 
 	public EventBusConfiguration RegisterEventSource<TEventData>(string id)
 	{
