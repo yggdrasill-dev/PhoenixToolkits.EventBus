@@ -7,7 +7,7 @@
     <RootNamespace>Valhalla.Messages</RootNamespace>
     <SqlQueryToolsConnectionString />
     <PackageId>PhoenixToolkits.EventBus</PackageId>
-    <Version>0.0.4</Version>
+    <Version>0.0.5</Version>
     <Authors>Phoenix</Authors>
     <Company>Valhalla</Company>
     <Copyright>MIT</Copyright>
@@ -27,6 +27,7 @@
   <ItemGroup>
     <PackageReference Include="AsyncMethodNameFixer" Version="2.3.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="System.Reactive" Version="6.0.0" />
   </ItemGroup>
 
 </Project>
